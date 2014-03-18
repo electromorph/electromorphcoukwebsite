@@ -1,0 +1,29 @@
+<!DOCTYPE html>  
+<html ng-app="myapp">
+  <head>
+    <title>Shaft Couplers</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>	
+	<div id="header">
+	<h1>Shaft Couplers</h1>
+	<div data-ng-include data-src="'templates/text.html'"></div>
+	<ul>
+		<li><a href="http://ang/#/one" id="selected">Imperial</a></li>
+		<li><a href="http://ang/#/two">Metric</a></li>
+		<li><a href="http://ang/#/three">Metric to Imperial</a></li>
+		<li><a href="http://ang/#/four">Books</a></li>
+	</ul>
+	</div>
+	<div id="content">
+		<div ng-view></div>
+	</div>
+
+	
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.1.5/angular.min.js"></script>
+    <script src="https://cdn.firebase.com/v0/firebase.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angularFire/0.2.0/angularfire.min.js"></script>
+    <script src="js/app.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+  </body>
+</html>

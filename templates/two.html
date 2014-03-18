@@ -1,0 +1,13 @@
+<div ng-controller="MetricCtrl">
+    <h1>Metric Shaft Couplers</h1>
+	<div data-ng-include data-src="'templates/text.html'"></div>
+	<select id="LHS" ng-model="LHS">
+      <option ng-repeat="measurement in metricpossibilities" value="{{measurement.value}}">{{ measurement.label }}</option>
+    </select>
+	<p>
+		<img ng-src="http://services.electromorph.com/GetCoupler/true/{{LHS}}/true/{{RHS}}/5/Picture.png"/>
+	</p>
+	<select id="RHS" ng-model="RHS">
+      <option ng-repeat="measurement in metricpossibilities" value="{{measurement.value}}">{{ measurement.label }}</option>
+    </select>
+ </div>

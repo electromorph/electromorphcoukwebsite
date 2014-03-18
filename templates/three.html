@@ -1,0 +1,11 @@
+<div ng-controller="BookCtrl">
+    <h1>Imperial / Metric Shaft Couplers</h1>
+	<div data-ng-include data-src="'templates/text.html'"></div>
+	<select id="LHS" ng-controller="MetricCtrl">
+      <option ng-repeat="measurement in metricpossibilities" value="{{measurement.value}}">{{ measurement.label }}</option>
+    </select>
+	<select id="RHS" ng-controller="ImperialCtrl" ng-click="goImperial()">
+      <option ng-repeat="measurement in imperialpossibilities" value="{{measurement.value}}">{{ measurement.label }}</option>
+    </select
+ </div>
+

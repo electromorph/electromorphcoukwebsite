@@ -1,0 +1,11 @@
+<h1>Books</h1>
+    <div>
+	<ul>
+      <li ng-repeat="book in books">{{ book.author }} : {{ book.title }}</li>
+    </ul>
+    <form>
+      <input type="text" ng-model="newBook.author" placeholder="Author" autofocus/>
+      <input type="text" ng-model="newBook.title" placeholder="Title" />
+      <button ng-click="add()">Add</button>
+    </form>
+	</div>

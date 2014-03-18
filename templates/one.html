@@ -1,0 +1,11 @@
+<div ng-controller="ImperialCtrl">
+	<h1>Imperial shaft couplers</h1>
+	<div data-ng-include data-src="'templates/text.html'"></div>
+	<select id="LHS" ng-model="LHS">
+      <option ng-repeat="measurement in imperialpossibilities" ng-init="LHS = options[1]" value="{{measurement.value}}">{{ measurement.label }}</option>
+    </select>
+	<select id="RHS" ng-init="RHS = options[1]" ng-model="RHS">
+      <option ng-repeat="measurement in imperialpossibilities" value="{{measurement.value}}">{{ measurement.label }}</option>
+    </select>
+	<img ng-src="http://services.electromorph.com/GetCoupler/false/{{LHS}}/false/{{RHS}}/5/Picture.png"/>
+ </div>
